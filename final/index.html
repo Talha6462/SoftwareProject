@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive Games Website</title>
-        <!-- Fav Icon -->
-        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
-        <!-- Link To CSS -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Box Icons -->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <!-- Nav -->
-            <div class="nav container">
-                <!-- Logo -->
-                <a href="index.html" class="logo">Game<span>Store</span></a>
-                <!-- Nav Icons -->
-                <div class="nav_icons">
-                    <i class='bx bx-bell' id="bell-icon"></i>
-                    <i class='bx bxs-download'></i>
-                    <div class="menu-icon">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Games Website</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS File Link -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Game<span>Store</span></a>
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada' id="bell-icon"></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
-        </header>
+            <!-- Menu -->
+            <div class="menu">
+                <img src="img/menu.png" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- Notifictaion -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Game download is successful.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply charges.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home Section Start -->
+    <section class="home container" id="home">
+        <img src="img/home.png" alt="">
+        <div class="home-text">
+            <h1>CITY OF THE <br> FUTURE</h1>
+            <a href="" class="btn">Avalaible Now</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- Trending Section Start -->
+    <section class="trending container" id="trending">
+        <div class="heading">
+            <i class='bx bxs-flame'></i>
+            <h2>Trending Games</h2>
+        </div>
+        <!-- Content -->
+        <div class="trending-content Swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/trending1.webp" alt="">
+                        <div class="box-text">
+                            <h2>CyberPunk 2077</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-down-arrow-alt' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- Trending Section End -->
 
 
 
 
-        <!-- Link To JS -->
-        <script src="main.js"></script>
-    </body>
-    </html>
+    <!-- Link To Swiper File -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
