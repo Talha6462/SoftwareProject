@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Games Website</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper CSS File Link -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Custom Scroll bar -->
+    <div class="progress">
+        <div class="progress-bar" id="scroll-bar">
+            
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">FLA<span>KES</span></a>
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada' id="bell-icon"></i>
+                <i class='bx bxs-download'></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <img src="img/menu.png" alt="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending Movies</a></li>
+                    <li><a href="#new">New Movies</a></li>
+                    <li><a href="#highestrated">Highest Rated</a></li>
+                    <li><a href="#youractivity">Your Activity</a></li>
+                </div>
+            </div>
+            <!-- Notifictaion -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Minions is added to your activity.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>The Avengers is still pending in your watchlist.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home Section Start -->
+    <!-- <section class="home container" id="home">
+        <img src="img/home.png" alt="">
+        <div class="home-text">
+            <h1>CITY OF THE <br> FUTURE</h1>
+            <a href="" class="btn">Avalaible Now</a>
+        </div>
+    </section> -->
+    <!-- Home Section End -->
+    <!-- Trending Section Start -->
+    <section class="trending container" id="trending">
+        <div class="heading">
+            <i class='bx bxs-flame'></i>
+            <h2>Trending Games</h2>
+        </div>
+        <!-- Content -->
+        <div class="trending-content Swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide1 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/1.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Inception</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide2 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/2.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Superman: The Movie</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide3 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/3.webp" alt="">
+                        <div class="box-text">
+                            <h2>The Incredibles</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide4 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/4.jpeg" alt="">
+                        <div class="box-text">
+                            <h2>Hugo</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide5 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/5.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Mary Poppins</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide6 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/6.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Avatar</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide7 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/7.jpg" alt="">
+                        <div class="box-text">
+                            <h2>Barfi</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide8 -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/8.jpg" alt="">
+                        <div class="box-text">
+                            <h2>The Hangover</h2>
+                            <h3>Action</h3>
+                            <div class="rating-download">
+                                <div class="rating">
+                                    <i class='bx bxs-star'></i>
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending Section End -->
+    <!-- New Section Start -->
+    <section class="new container" id="new">
+        <div class="heading">
+            <i class='bx bx-game'></i>
+            <h2>New Movies</h2>
+        </div>
+        <!-- content -->
+        <div class="new-content">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="images/9.jpg" alt="">
+                <div class="box-text">
+                    <h2>The Silence of the Lambs</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="download.html" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="images/10.jpg" alt="">
+                <div class="box-text">
+                    <h2>Jaws</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="images/11.png" alt="">
+                <div class="box-text">
+                    <h2>Joker</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="images/12.jpg" alt="">
+                <div class="box-text">
+                    <h2>Split</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="images/13.jpg" alt="">
+                <div class="box-text">
+                    <h2>Bohemian Rhapsody</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="images/14.jpg" alt="">
+                <div class="box-text">
+                    <h2>Star Wars</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 7 -->
+            <div class="box">
+                <img src="images/15.jpg" alt="">
+                <div class="box-text">
+                    <h2>The Fate of the Furious</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 8 -->
+            <div class="box">
+                <img src="images/16.jpg" alt="">
+                <div class="box-text">
+                    <h2>The Assassin</h2>
+                    <h3>Action</h3>
+                    <div class="rating-download">
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <span>4.7</span>
+                        </div>
+                        <a href="#" class="box-btn"><i class='bx bx-play'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-page">
+            <a href="#">Next Page</a>
+        </div>
+    </section>
+    <!-- New Section End -->
+   <!-- copyright -->
+   <div class="copyright container">
+    <a href="#" class="logo">FLA<span>KES</span></a>
+    <p>&#169; FLAKES All Rights Reserved</p>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link To Swiper File -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
