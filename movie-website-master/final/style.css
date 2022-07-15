@@ -168,7 +168,8 @@ header {
 }
 
 .menu img {
-    width: 700px;
+    width: 900px;
+    padding: 50px;
 }
 
 .navbar {
@@ -353,14 +354,14 @@ header {
     gap: 1.5rem;
 }
 
-.next-page {
+.more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
 }
 
-.next-page a {
+.more a {
     background: var(--main-color);
     padding: 12px 20px;
     color: var(--text-color);
@@ -368,9 +369,9 @@ header {
     font-weight: 500;
 }
 
-.next-page a:hover {
+.more a:hover {
     background: var(--ligth-color);
-    transition: 0.3s all linear;
+    transition: 0.1s all linear;
 }
 
 .copyright {
@@ -392,13 +393,40 @@ header {
     border-bottom: 4px solid var(--main-color);
 }
 
+.boxed {
+    background: var(--ligth-color);
+    border-radius: 1rem;
+    padding: 30px;
+}
+
 .video-container video {
-    width: 90%;
+    width: 65%;
     aspect-ratio: 16/9;
+    border-radius: 1rem;
 }
 
 .video-container {
-    margin-top: 5rem;
+    margin-top: 4rem;
+}
+
+.info{
+    position: absolute;
+    top: 25%;
+    right: 10rem;
+    background: var(--ligth-color);
+    width: 350px;
+    height: 350px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    gap: 1rem;
+    
+}
+
+.info .bx{
+    color: #faf102;
 }
 
 .about {
